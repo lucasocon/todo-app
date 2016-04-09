@@ -3,6 +3,8 @@ import { ReactiveVar } from 'meteor/reactive-var';
 
 import './main.html';
 
+Meteor.subscribe('todos');
+
 // Template Helpers
 Template.main.helpers({
   todos: function() {
